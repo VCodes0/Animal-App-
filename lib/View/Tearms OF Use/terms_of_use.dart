@@ -10,7 +10,7 @@ class TermsOfUsePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text(
           "Terms of Use",
@@ -23,6 +23,7 @@ class TermsOfUsePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         padding: EdgeInsets.symmetric(
           horizontal: screenSize.width * 0.05,
           vertical: screenSize.height * 0.02,
@@ -48,32 +49,27 @@ class TermsOfUsePage extends StatelessWidget {
             SizedBox(height: screenSize.height * 0.03),
             _buildPolicyItem(
               screenSize,
-              Icons
-                  .person, // Using a generic person icon, replace if you have specific asset
+              Icons.person,
               "By pressing the Accept button, I declare I have read and accepted the following condition of use :",
             ),
             _buildPolicyItem(
               screenSize,
-              Icons
-                  .gavel, // Using a generic gavel icon, replace if you have specific asset
+              Icons.gavel,
               "If we find the app is being used outside its terms of use, we may restrict access to it.",
             ),
             _buildPolicyItem(
               screenSize,
-              Icons
-                  .block, // Using a generic block icon, replace if you have specific asset
+              Icons.block,
               "Any type of modification to the app or its components is not allowed.",
             ),
             _buildPolicyItem(
               screenSize,
-              Icons
-                  .description, // Using a generic description icon, replace if you have specific asset
+              Icons.description,
               "Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here.",
             ),
             _buildPolicyItem(
               screenSize,
-              Icons
-                  .visibility_off, // Using a generic visibility_off icon, replace if you have specific asset
+              Icons.visibility_off,
               "We do not share any kind of your Personal Data with third parties.",
             ),
             SizedBox(height: screenSize.height * 0.04),
@@ -107,7 +103,7 @@ class TermsOfUsePage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.brown[700], // Brown color as in image
+                  backgroundColor: Colors.brown[700],
                   padding: EdgeInsets.symmetric(
                     horizontal: screenSize.width * 0.15,
                     vertical: screenSize.height * 0.02,
@@ -115,7 +111,7 @@ class TermsOfUsePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(
                       screenSize.width * 0.02,
-                    ), // Rounded corners
+                    ),
                   ),
                 ),
                 child: Text(
@@ -129,11 +125,10 @@ class TermsOfUsePage extends StatelessWidget {
               ),
             ),
             SizedBox(height: screenSize.height * 0.04),
-            // Horizontal image gallery at the bottom
             Image.asset(
-              "assets/images/tofimg.png", // Assuming this is your image for the dog gallery
+              "assets/Rectangle 18.png",
               width: screenSize.width,
-              fit: BoxFit.cover, // Cover the width
+              fit: BoxFit.cover,
             ),
           ],
         ),
@@ -147,11 +142,7 @@ class TermsOfUsePage extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(
-            icon,
-            size: screenSize.width * 0.06,
-            color: Colors.brown[700], // Icon color as seen in image
-          ),
+          Icon(icon, size: screenSize.width * 0.06, color: Colors.brown[700]),
           SizedBox(width: screenSize.width * 0.03),
           Expanded(
             child: Text(

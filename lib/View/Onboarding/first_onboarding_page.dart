@@ -18,7 +18,10 @@ class FirstOnboardingPage extends StatelessWidget {
             left: 0,
             right: 0,
             height: screenSize.height * 0.55,
-            child: Image.asset("assets/images/o1bg.png", fit: BoxFit.cover),
+            child: Image.asset(
+              "assets/O13.png",
+              fit: BoxFit.cover,
+            ),
           ),
           Positioned(
             top: screenSize.height * 0.035,
@@ -28,7 +31,7 @@ class FirstOnboardingPage extends StatelessWidget {
             child: SizedBox(
               child: Center(
                 child: Image.asset(
-                  "assets/images/o1.png",
+                  "assets/O1.png",
                   fit: BoxFit.contain,
                   width: screenSize.width * 0.8,
                   height: screenSize.height * 0.4,
@@ -83,7 +86,7 @@ class FirstOnboardingPage extends StatelessWidget {
                   ),
                 ),
                 child: Image.asset(
-                  "assets/images/oqnext.png",
+                  "assets/O12.png",
                   height: screenSize.width * 0.15,
                 ),
               ),

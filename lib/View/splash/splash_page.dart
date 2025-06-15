@@ -35,7 +35,7 @@ class _SplashPageState extends State<SplashPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  "assets/images/logo.png",
+                  "assets/logo.png",
                   width: mq.width * 0.4,
                   height: mq.width * 0.4,
                 ),
@@ -60,7 +60,7 @@ class _SplashPageState extends State<SplashPage> {
               child: CircleAvatar(
                 backgroundColor: CupertinoColors.transparent,
                 radius: 40,
-                backgroundImage: AssetImage("assets/images/paw logo.png"),
+                backgroundImage: AssetImage("assets/Paw Loader 1.png"),
               ),
             ),
           ),

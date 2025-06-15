@@ -18,7 +18,7 @@ class ThirdOnboardingPage extends StatelessWidget {
             left: 0,
             right: 0,
             height: screenSize.height * 0.55,
-            child: Image.asset("assets/images/o3bg.png", fit: BoxFit.cover),
+            child: Image.asset("assets/O32.png", fit: BoxFit.cover),
           ),
           Positioned(
             top: screenSize.height * 0.035,
@@ -28,7 +28,7 @@ class ThirdOnboardingPage extends StatelessWidget {
             child: SizedBox(
               child: Center(
                 child: Image.asset(
-                  "assets/images/o3animal.png",
+                  "assets/O3.png",
                   fit: BoxFit.contain,
                   width: screenSize.width * 0.8,
                   height: screenSize.height * 0.4,
@@ -78,12 +78,10 @@ class ThirdOnboardingPage extends StatelessWidget {
               child: InkWell(
                 onTap: () => Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => TermsOfUsePage(),
-                  ),
+                  MaterialPageRoute(builder: (context) => TermsOfUsePage()),
                 ),
                 child: Image.asset(
-                  "assets/images/o3next.png",
+                  "assets/O33.png",
                   height: screenSize.width * 0.15,
                 ),
               ),
