@@ -1,3 +1,4 @@
+import 'package:animal_voice_app/View/Categary/categary_page.dart';
 import 'package:flutter/material.dart';
 
 class TermsOfUsePage extends StatelessWidget {
@@ -101,7 +102,12 @@ class TermsOfUsePage extends StatelessWidget {
             SizedBox(height: screenSize.height * 0.05),
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => CategoryPage()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.brown[700],
                   padding: EdgeInsets.symmetric(
